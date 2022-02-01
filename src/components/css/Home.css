@@ -1,0 +1,73 @@
+.home__motto {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 300px;
+	width: 100%;
+}
+
+.text {
+	font-size: 3rem;
+	font-family: "Inter", sans-serif;
+	font-family: "Source Serif Pro", serif;
+}
+
+.home__productcontainer {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-left: 150px;
+	margin-right: 150px;
+}
+
+.home__product {
+	width: 300px;
+	height: 300px;
+	border: 1px solid black;
+}
+
+.textiles {
+	width: 500px;
+}
+
+.home__promovideo {
+	margin: 50px;
+}
+
+.home__reviews {
+	text-align: center;
+	margin-left: 150px;
+	margin-right: 150px;
+}
+
+.message {
+	font-size: 2rem;
+	font-family: "Inter", sans-serif;
+	font-family: "Source Serif Pro", serif;
+}
+
+.home__reviewcontainer {
+	display: flex;
+	flex-direction: row;
+	padding-top: 15px;
+}
+
+.home__review {
+	padding-left: 10px;
+	padding-right: 10px;
+	font-family: "Inter", sans-serif;
+	font-family: "Source Serif Pro", serif;
+}
+
+.home__review p {
+	padding-bottom: 10px;
+}
+
+.home__reviewperson {
+	font-size: 1rem;
+	font-family: "Catamaran", sans-serif;
+	font-family: "Inter", sans-serif;
+	font-family: "Josefin Slab", serif;
+	font-family: "Source Serif Pro", serif;
+}

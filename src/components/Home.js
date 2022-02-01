@@ -1,70 +1,113 @@
 import React from 'react';
-import './Home.css';
-import Banner from './banner.jpg';
-import Product from './Product';
+import BrushOutlinedIcon from '@material-ui/icons/BrushOutlined';
+import LocalOfferOutlinedIcon from '@material-ui/icons/LocalOfferOutlined';
+import SpaOutlinedIcon from '@material-ui/icons/SpaOutlined';
+import RestaurantOutlinedIcon from '@material-ui/icons/RestaurantOutlined';
+
+import './css/Home.css'
 
 function Home() {
     return (
         <div className='home'>
-            <div className='home__container'>
-                <img className='home__image' src={Banner} alt="Banner"/>
+            <div className='home__motto'>
+                <h1 className='home__motto text'>
+                    Sustainably crafted goods to elevate your everyday.
+                </h1>
+            </div>
 
-                <div className='home__row'>
-                    {/* Product components x2 */}
-                    <Product 
-                        id={123}
-                        title="You're Finally Awake Bedroom Couch Sofa Square Pillow"
-                        price={15.99}
-                        image="https://m.media-amazon.com/images/I/61l2HVUEinL._AC_SL1200_.jpg"
-                        rating={5}
-                    />
-                    <Product 
-                        id={938}
-                        title="CreepyParty Fish Mask Animal Latex Full Head Realistic Masks Fancy Dress"
-                        price={16.99}
-                        image="https://m.media-amazon.com/images/I/715Bwdhd86L._AC_SL1500_.jpg"
-                        rating={4}
-                    />
+            {/* Product selection */}
+            <div className='home__productcontainer'>
+                <div className='home__product glassware'>
+                    Glassware
                 </div>
-
-                <div className='home__row'>
-                    {/* Product components x3 */}
-                    <Product 
-                        id={543}
-                        title="Japanese demon art face Skull devil oni karajuku aesthetic T-Shirt"
-                        price={15.45}
-                        image="https://m.media-amazon.com/images/I/A13usaonutL._CLa%7C2140%2C2000%7C81wxmpsecbL.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_SX679._SX._UX._SY._UY_.png"
-                        rating={4}
-                    />
-                    <Product 
-                        id={385}
-                        title="Blivener Chubby Blob Seal Pillow Stuffed Cotton Plush Animal Toy Ocean Pillow"
-                        price={58.99}
-                        image="https://m.media-amazon.com/images/I/61n9xDbZkgL._AC_SL1300_.jpg"
-                        rating={5}
-                    />
-                    <Product 
-                        id={374}
-                        title="Withings Steel HR - Hybrid Smartwatch - Activity Tracker with Connected GPS"
-                        price={134.00}
-                        image="https://m.media-amazon.com/images/I/61J8phrQWfS._AC_SL1500_.jpg"
-                        rating={3}
-                    />
+                <div className='home__product textiles'>
+                    Textiles
                 </div>
+                <div className='home__product dinnerware'>
+                    Dinnerware
+                </div>
+                <div className='home__product serveware'>
+                    Serveware
+                </div>
+                <div className='home__product flatware'>
+                    Flatware
+                </div>
+            </div>
 
-                <div className='home__row'>
-                    {/* Product component x1 */}
-                    <Product 
-                        id={678}
-                        title="Sony BRAVIA KD-65XH90/P - 65-inch - Fully Array LED - 4K"
-                        price={1023.99}
-                        image="https://m.media-amazon.com/images/I/81WXH++OAgL._AC_SL1500_.jpg"
-                        rating={5}
-                    />
+            <div className='home__promovideo'>
+                Video here
+            </div>
+
+            {/* Reviews */}
+            <div className='home__reviews'>
+                <span className='home__review message'>
+                    We believe in simple, timeless, and responsible designs.
+                </span>
+                <div className='home__reviewcontainer'>
+                    <div className='home__review'>
+                        <p>"Such beautiful dishes that I have come to refer to as my shelf art! 
+                        if you have open shelving these dishes are for you. They are unique."</p>
+                        <span className='home__reviewperson'>Glen, Niagara Falls, ON</span>
+                    </div>
+                    <div className='home__review'>
+                        <p>"I loved these dishes from the get-go! Knew I had to have them.
+                         I chose three colours and they go together beautifully."</p>
+                        <span className='home__reviewperson'>Vanessa, Sherwood Park, AB</span>
+                    </div>
+                    <div className='home__review'>
+                        <p>"If you've been contemplating purchasing these plates - go for it!
+                        They've elevated my dining experience and make meals so much more enjoyable!"</p>
+                        <span className='home__reviewperson'>Tobi, Vancouver, BC</span>
+                    </div>
+                </div>
+            </div>
+
+            {/* Bundle collections */}
+            <div>
+                <h3>Discover our bundled collections</h3>
+            </div>
+
+            {/* Company pillars */}
+            <div className='home__companypillars'>
+                <div className='home__pillaricon'>
+                    <BrushOutlinedIcon />
+                </div>
+                <span className='home__pillartitle'>Responsible Design</span>
+                <div className='home__pillarinfo'>
+                    <p>
+                        Designed with integrity and durably crafted for everyday use.
+                    </p>
+                </div>
+                <div className='home__pillaricon'>
+                    <LocalOfferOutlinedIcon />
+                </div>
+                <span className='home__pillartitle'>Transparent Pricing</span>
+                <div className='home__pillarinfo'>
+                    <p>
+                        We believe in accessible pricing and full transparency. Our pricing model is an open book.
+                    </p>
+                </div>
+                <div className='home__pillaricon'>
+                    <SpaOutlinedIcon />
+                </div>
+                <span className='home__pillartitle'>Sustainable Sourcing</span>
+                <div className='home__pillarinfo'>
+                    <p>
+                        We only partner with people who put the earth, and its people, first.
+                    </p>
+                </div>
+                <div className='home__pillaricon'>
+                    <RestaurantOutlinedIcon />
+                </div>
+                <span className='home__pillartitle'>Giving Back</span>
+                <div className='home__pillarinfo'>
+                    <p>
+                        Thanks to Mealshare, every purchase directly donates a meal to a youth in need.
+                    </p>
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
-export default Home
+export default Home;

@@ -1,0 +1,25 @@
+.header {
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	align-items: center;
+	margin-left: 150px;
+	margin-right: 150px;
+	padding-top: 25px;
+}
+
+.header__search {
+	justify-self: start;
+}
+
+.header__logo {
+	justify-self: center;
+}
+
+.header__cart {
+	justify-self: end;
+}
+
+.navmenu {
+	grid-column: 2 / 2;
+	justify-self: center;
+}

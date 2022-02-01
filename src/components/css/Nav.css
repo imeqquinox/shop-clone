@@ -1,0 +1,9 @@
+/* .navmenu {
+	display: flex;
+	justify-content: center;
+} */
+
+.navmenu a {
+	margin-left: 10px;
+	margin-right: 10px;
+}
