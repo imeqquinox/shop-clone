@@ -1,5 +1,20 @@
+/* General/overall */
 body {
 	padding: 0;
 	margin: 0;
 	background-color: #efecec;
+}
+
+section {
+	padding: 3rem 0;
+}
+
+.container {
+	margin-inline: auto;
+	width: min(90%, 70.5rem);
+}
+
+header {
+	margin-inline: auto;
+	width: min(90%, 70.5rem);
 }

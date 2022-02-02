@@ -2,8 +2,6 @@
 	display: grid;
 	grid-template-columns: 1fr 2fr 1fr;
 	align-items: center;
-	margin-left: 150px;
-	margin-right: 150px;
 	padding-top: 25px;
 }
 

@@ -5,6 +5,22 @@ import SpaOutlinedIcon from '@material-ui/icons/SpaOutlined';
 import RestaurantOutlinedIcon from '@material-ui/icons/RestaurantOutlined';
 
 import './css/Home.css'
+import ProductCard from './ProductCard';
+import Review from './Review';
+import CompanyPillar from './CompanyPillar';
+import BlogCard from './BlogCard';
+
+import GlassCardImg from '../images/glass.jpg';
+import TextilesCardImg from '../images/textiles.jpg';
+import DinnerwareCardImg from '../images/dinnerware.png';
+import ServewareCardImg from '../images/serveware.jpg';
+import FlatwareCardImg from '../images/flatware.jpg';
+import Bundle1Img from '../images/bundle1.jpg';
+import Bundle2Img from '../images/bundle2.jpg';
+import Blog1Img from '../images/blog1.jpg';
+import Blog2Img from '../images/blog2.jpg';
+import Blog3Img from '../images/blog3.jpg';
+
 
 function Home() {
     return (
@@ -16,96 +32,129 @@ function Home() {
             </div>
 
             {/* Product selection */}
-            <div className='home__productcontainer'>
-                <div className='home__product glassware'>
-                    Glassware
+            <section>
+                <div className='home__products container'>
+                    <ProductCard category="Glassware" img={GlassCardImg}/>
+                    <ProductCard category="Textiles" img={TextilesCardImg}/>
+                    <ProductCard category="Dinnerware" img={DinnerwareCardImg}/>
+                    <ProductCard category="Serveware" img={ServewareCardImg}/>
+                    <ProductCard category="Flatware" img={FlatwareCardImg}/>
                 </div>
-                <div className='home__product textiles'>
-                    Textiles
-                </div>
-                <div className='home__product dinnerware'>
-                    Dinnerware
-                </div>
-                <div className='home__product serveware'>
-                    Serveware
-                </div>
-                <div className='home__product flatware'>
-                    Flatware
-                </div>
-            </div>
+            </section>
 
-            <div className='home__promovideo'>
-                Video here
-            </div>
+            <section>
+                <div className='home__promovideo container'>    
+                    <h2 className='home__promovideo title'>
+                        Video here
+                    </h2>
+                </div>
+            </section>
+            
 
             {/* Reviews */}
-            <div className='home__reviews'>
-                <span className='home__review message'>
-                    We believe in simple, timeless, and responsible designs.
-                </span>
-                <div className='home__reviewcontainer'>
-                    <div className='home__review'>
-                        <p>"Such beautiful dishes that I have come to refer to as my shelf art! 
-                        if you have open shelving these dishes are for you. They are unique."</p>
-                        <span className='home__reviewperson'>Glen, Niagara Falls, ON</span>
-                    </div>
-                    <div className='home__review'>
-                        <p>"I loved these dishes from the get-go! Knew I had to have them.
-                         I chose three colours and they go together beautifully."</p>
-                        <span className='home__reviewperson'>Vanessa, Sherwood Park, AB</span>
-                    </div>
-                    <div className='home__review'>
-                        <p>"If you've been contemplating purchasing these plates - go for it!
-                        They've elevated my dining experience and make meals so much more enjoyable!"</p>
-                        <span className='home__reviewperson'>Tobi, Vancouver, BC</span>
+            <section>
+                <div className='home__reviews container'>
+                    <h2 className='home__review message'>
+                        We believe in simple, timeless, and responsible designs.
+                    </h2>
+                    <div className='home__reviewcontainer'>
+                        <Review 
+                            review="Such beautiful dishes that I have come to refer to as my shelf art! 
+                            if you have open shelving these dishes are for you. They are unique."
+                            reviewer="Glen"
+                            location="Niagara Falls, ON"
+                        />
+                        <Review 
+                            review="I loved these dishes from the get-go! Knew I had to have them.
+                            I chose three colours and they go together beautifully."
+                            reviewer="Vanessa"
+                            location="Sherwood Park, AB"
+                        />
+                        <Review
+                            review="If you've been contemplating purchasing these plates - go for it!
+                            They've elevated my dining experience and make meals so much more enjoyable!"
+                            reviewer="Tobi"
+                            location="Vancouver, BC"
+                        />
                     </div>
                 </div>
-            </div>
+            </section>
 
             {/* Bundle collections */}
-            <div>
-                <h3>Discover our bundled collections</h3>
-            </div>
+            <section>
+                <div className='home__bundle container'>
+                    <h2 className='home__bundle title'>
+                        Discover our bundled collections
+                    </h2>
+                    <div className='home__bundles'>
+                        <ProductCard category="Bundles" img={Bundle1Img}/>
+                        <img className='home__bundle img' src={Bundle2Img} alt="Bundle product"/>
+                        <img className='home__bundle img' src={TextilesCardImg} alt="Bundle product"/>
+                    </div>
+                </div>
+            </section>
+            
 
             {/* Company pillars */}
-            <div className='home__companypillars'>
-                <div className='home__pillaricon'>
-                    <BrushOutlinedIcon />
+            <section>
+                <div className='home__companypillars container'>
+                    <CompanyPillar 
+                        icon={<BrushOutlinedIcon />}
+                        title="Responsible Design"
+                        info="Designed with integrity and durably crafted for everyday use."
+                    />
+                    <CompanyPillar 
+                        icon={<LocalOfferOutlinedIcon />}
+                        title="Transparent Pricing"
+                        info="We believe in accessible pricing and full transparency. Our pricing model is an open book."
+                    />
+                    <CompanyPillar 
+                        icon={<SpaOutlinedIcon />}
+                        title="Sustainable Sourcing"
+                        info="We only partner with people who put the earth, and its people, first."
+                    />
+                    <CompanyPillar 
+                        icon={<RestaurantOutlinedIcon />}
+                        title="Giving Back"
+                        info="Thanks to Mealshare, every purchase directly donates a meal to a youth in need."
+                    />  
                 </div>
-                <span className='home__pillartitle'>Responsible Design</span>
-                <div className='home__pillarinfo'>
-                    <p>
-                        Designed with integrity and durably crafted for everyday use.
-                    </p>
+            </section>
+
+            {/* Magazine/blog section */}
+            <section>
+                <div className='home__magazine container'>
+                    <h2 className='home__magazine title'>
+                        From the magazine
+                    </h2>
+                    <div className='home__magazineblogs'>
+                        <BlogCard 
+                            img={Blog1Img} 
+                            title="Sweet & Savory Comfort Food Recipes"
+                            date="November 17, 2021"
+                            preview="Comfort food doesn't always look like mac 'n cheese-it often looks
+                                    like a memory in meal form, passed down from someone special. This 
+                                    Mother's day, we're honouring all the women..."
+                        />
+                        <BlogCard 
+                            img={Blog2Img} 
+                            title="Bringing Joy to Every Table"
+                            date="November 16, 2021"
+                            preview="For many, it has become a daily routine to prepare nutritious meals for
+                                    our families and friends, served on carefully chosen dinnerware. The food
+                                    we eat becomes merely a second..."
+                        />
+                        <BlogCard 
+                            img={Blog3Img} 
+                            title="Preparing a Dinner Table for Success"
+                            date="November 16, 2021"
+                            preview="Decorating your dinner table is a fun task that can make or break your
+                                    dinner party. Everyone who sits down for a meal is going to enjoy a 
+                                    beautifully decorated..."
+                        />
+                    </div>
                 </div>
-                <div className='home__pillaricon'>
-                    <LocalOfferOutlinedIcon />
-                </div>
-                <span className='home__pillartitle'>Transparent Pricing</span>
-                <div className='home__pillarinfo'>
-                    <p>
-                        We believe in accessible pricing and full transparency. Our pricing model is an open book.
-                    </p>
-                </div>
-                <div className='home__pillaricon'>
-                    <SpaOutlinedIcon />
-                </div>
-                <span className='home__pillartitle'>Sustainable Sourcing</span>
-                <div className='home__pillarinfo'>
-                    <p>
-                        We only partner with people who put the earth, and its people, first.
-                    </p>
-                </div>
-                <div className='home__pillaricon'>
-                    <RestaurantOutlinedIcon />
-                </div>
-                <span className='home__pillartitle'>Giving Back</span>
-                <div className='home__pillarinfo'>
-                    <p>
-                        Thanks to Mealshare, every purchase directly donates a meal to a youth in need.
-                    </p>
-                </div>
-            </div>
+            </section>
         </div>
     );
 }

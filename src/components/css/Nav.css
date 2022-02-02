@@ -4,6 +4,12 @@
 } */
 
 .navmenu a {
+	color: #2c332f;
+	text-decoration: none;
 	margin-left: 10px;
 	margin-right: 10px;
+}
+
+.navmenu a:hover {
+	text-decoration: underline;
 }

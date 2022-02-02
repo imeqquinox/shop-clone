@@ -1,3 +1,11 @@
+/* General */
+.title {
+	font-family: "Inter", sans-serif;
+	font-family: "Source Serif Pro", serif;
+	margin-bottom: 2rem;
+}
+
+/* Top company motto */
 .home__motto {
 	display: flex;
 	justify-content: center;
@@ -13,55 +21,70 @@
 	font-family: "Source Serif Pro", serif;
 }
 
-.home__productcontainer {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	margin-left: 150px;
-	margin-right: 150px;
+/* Products */
+.home__products {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-gap: 1.25rem;
+}
+
+.Textiles {
+	grid-column: span 2;
 }
 
 .home__product {
-	width: 300px;
-	height: 300px;
-	border: 1px solid black;
+	border: 1px solid #b0a9a9;
+	border-radius: 2%;
 }
 
-.textiles {
-	width: 500px;
+.home__product img {
+	width: 100%;
+	height: 500px;
+	border-radius: 2% 2% 0 0;
+	object-fit: cover;
 }
 
+.home__producttitle {
+	display: flex;
+	height: 50px;
+	padding-left: 20px;
+	align-items: center;
+	font-size: 1.25rem;
+	font-family: "Inter", sans-serif;
+	font-family: "Source Serif Pro", serif;
+}
+
+/* Promovideo */
 .home__promovideo {
-	margin: 50px;
 }
 
+/* Review section */
 .home__reviews {
 	text-align: center;
-	margin-left: 150px;
-	margin-right: 150px;
 }
 
 .message {
 	font-size: 2rem;
 	font-family: "Inter", sans-serif;
 	font-family: "Source Serif Pro", serif;
+	margin-bottom: 2rem;
 }
 
 .home__reviewcontainer {
 	display: flex;
 	flex-direction: row;
-	padding-top: 15px;
 }
 
 .home__review {
-	padding-left: 10px;
-	padding-right: 10px;
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
 	font-family: "Inter", sans-serif;
 	font-family: "Source Serif Pro", serif;
 }
 
 .home__review p {
-	padding-bottom: 10px;
+	padding-bottom: 0.625rem;
 }
 
 .home__reviewperson {
@@ -70,4 +93,70 @@
 	font-family: "Inter", sans-serif;
 	font-family: "Josefin Slab", serif;
 	font-family: "Source Serif Pro", serif;
+}
+
+/* Bundle collections */
+.home__bundles {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-gap: 1.25rem;
+}
+
+.home__bundle .img {
+	height: 250px;
+	width: 100%;
+	object-fit: cover;
+}
+
+.Bundles {
+	grid-column: span 2;
+	grid-row: span 2;
+}
+
+/* Company pillars */
+.home__companypillars {
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	gap: 2rem;
+}
+
+/* Magazine */
+.home__magazineblogs {
+	display: flex;
+	flex-direction: row;
+	gap: 2rem;
+}
+
+.home__magazinecard {
+	border: 1px solid #b0a9a9;
+	border-radius: 2%;
+}
+
+.home__magazinecard img {
+	height: 250px;
+	width: 100%;
+	border-radius: 2% 2% 0 0;
+	object-fit: cover;
+}
+
+.home__magazinecontent {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 1.25rem;
+	font-family: "Inter", sans-serif;
+	font-family: "Source Serif Pro", serif;
+	padding: 1rem;
+	gap: 0.25rem;
+}
+
+.home__magazineblogtitle {
+	align-self: flex-start;
+}
+
+.home__magazinedate {
+	align-self: flex-start;
+	font-size: 0.75rem;
 }
