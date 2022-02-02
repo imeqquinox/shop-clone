@@ -1,15 +1,19 @@
 import './App.css';
+import { Routes, Route } from 'react-router-dom';
 
 import Header from './components/Header';
-import Home from './components/Home';
 import Footer from './components/Footer';
+import Home from './pages/Home';
+import Dinnerware from './pages/Dinnerware';
 
 function App() {
-
   return (
     <div>
       <Header />
-      <Home />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="dinnerware" element={<Dinnerware />} />
+      </Routes>
       <Footer />
     </div>
   );

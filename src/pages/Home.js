@@ -5,10 +5,10 @@ import SpaOutlinedIcon from '@material-ui/icons/SpaOutlined';
 import RestaurantOutlinedIcon from '@material-ui/icons/RestaurantOutlined';
 
 import './css/Home.css'
-import ProductCard from './ProductCard';
-import Review from './Review';
-import CompanyPillar from './CompanyPillar';
-import BlogCard from './BlogCard';
+import CategoryCard from '../components/CategoryCard';
+import Review from '../components/Review';
+import CompanyPillar from '../components/CompanyPillar';
+import BlogCard from '../components/BlogCard';
 
 import GlassCardImg from '../images/glass.jpg';
 import TextilesCardImg from '../images/textiles.jpg';
@@ -34,11 +34,11 @@ function Home() {
             {/* Product selection */}
             <section>
                 <div className='home__products container'>
-                    <ProductCard category="Glassware" img={GlassCardImg}/>
-                    <ProductCard category="Textiles" img={TextilesCardImg}/>
-                    <ProductCard category="Dinnerware" img={DinnerwareCardImg}/>
-                    <ProductCard category="Serveware" img={ServewareCardImg}/>
-                    <ProductCard category="Flatware" img={FlatwareCardImg}/>
+                    <CategoryCard category="Glassware" img={GlassCardImg}/>
+                    <CategoryCard category="Textiles" img={TextilesCardImg}/>
+                    <CategoryCard category="Dinnerware" img={DinnerwareCardImg}/>
+                    <CategoryCard category="Serveware" img={ServewareCardImg}/>
+                    <CategoryCard category="Flatware" img={FlatwareCardImg}/>
                 </div>
             </section>
 
@@ -87,7 +87,7 @@ function Home() {
                         Discover our bundled collections
                     </h2>
                     <div className='home__bundles'>
-                        <ProductCard category="Bundles" img={Bundle1Img}/>
+                        <CategoryCard category="Bundles" img={Bundle1Img}/>
                         <img className='home__bundle img' src={Bundle2Img} alt="Bundle product"/>
                         <img className='home__bundle img' src={TextilesCardImg} alt="Bundle product"/>
                     </div>

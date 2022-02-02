@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import SearchIcon from '@material-ui/icons/Search';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart'
 
@@ -13,7 +14,9 @@ function Header() {
                 <SearchIcon />
             </div>
             <div className='header__logo'>
-                <img src={HeaderLogo} alt="Logo"/>
+                <Link to="/">
+                    <img src={HeaderLogo} alt="Logo"/>
+                </Link>
             </div>
             <div className='header__cart'>
                 <ShoppingCartIcon />

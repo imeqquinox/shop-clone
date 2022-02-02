@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 
 import './css/Footer.css'
@@ -23,8 +24,8 @@ function Footer() {
                     <h2>Get to know Craft</h2>
                 </div>
                 <div className='footer__links'>
-                    <a href='/'>About</a>
-                    <a href='/'>Magazine</a>
+                    <Link to='/about'>About</Link>
+                    <Link to='/magazine'>Magazine</Link>
                 </div>
             </div>
         </section>
