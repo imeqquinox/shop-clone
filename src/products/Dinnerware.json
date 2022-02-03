@@ -1,0 +1,34 @@
+{
+    "products": [
+        {
+            "name": "everything_bowls",
+            "img": "/images/dinnerware/everythingBowls.jpg",
+            "title": "The Everything Bowls",
+            "price": 39.00
+        },
+        {
+            "name": "dining_essentials",
+            "img": "/images/dinnerware/diningEssentials.jpg",
+            "title": "Dining Essentials", 
+            "price": 525.00
+        },
+        {
+            "name": "serving_platter",
+            "img": "/images/dinnerware/servingPlate.jpg",
+            "title": "The Serving Platter",
+            "price": 59.00
+        },
+        {
+            "name": "mugs",
+            "img": "/images/dinnerware/mugs.jpg",
+            "title": "The Mugs",
+            "price": 69.00
+        },
+        {
+            "name": "serving_set",
+            "img": "/images/dinnerware/servingSet.jpg",
+            "title": "Serving Set",
+            "price": 105.00
+        }
+    ]
+}

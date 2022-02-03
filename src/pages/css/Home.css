@@ -21,7 +21,7 @@
 	font-family: "Source Serif Pro", serif;
 }
 
-/* Products */
+/* Products/Categories */
 .home__products {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;

@@ -1,0 +1,22 @@
+{
+    "products": [
+        {
+            "name": "glassware_set",
+            "img": "/images/glassware/glasswareSet.jpg",
+            "title": "Glassware Set",
+            "price": 125.00
+        },
+        {
+            "name": "short_glasses",
+            "img": "/images/glassware/shortGlasses.jpg",
+            "title": "The Short Glasses", 
+            "price": 65.00
+        },
+        {
+            "name": "tall_glasses",
+            "img": "/images/glassware/tallGlasses.jpg",
+            "title": "The Tall Glasses", 
+            "price": 75.00
+        }
+    ]
+}

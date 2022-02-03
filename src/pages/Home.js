@@ -10,16 +10,16 @@ import Review from '../components/Review';
 import CompanyPillar from '../components/CompanyPillar';
 import BlogCard from '../components/BlogCard';
 
-import GlassCardImg from '../images/glass.jpg';
-import TextilesCardImg from '../images/textiles.jpg';
-import DinnerwareCardImg from '../images/dinnerware.png';
-import ServewareCardImg from '../images/serveware.jpg';
-import FlatwareCardImg from '../images/flatware.jpg';
-import Bundle1Img from '../images/bundle1.jpg';
-import Bundle2Img from '../images/bundle2.jpg';
-import Blog1Img from '../images/blog1.jpg';
-import Blog2Img from '../images/blog2.jpg';
-import Blog3Img from '../images/blog3.jpg';
+import GlassCardImg from '../images/home/glass.jpg';
+import TextilesCardImg from '../images/home/textiles.jpg';
+import DinnerwareCardImg from '../images/home/dinnerware.png';
+import ServewareCardImg from '../images/home/serveware.jpg';
+import FlatwareCardImg from '../images/home/flatware.jpg';
+import Bundle1Img from '../images/home/bundle1.jpg';
+import Bundle2Img from '../images/home/bundle2.jpg';
+import Blog1Img from '../images/home/blog1.jpg';
+import Blog2Img from '../images/home/blog2.jpg';
+import Blog3Img from '../images/home/blog3.jpg';
 
 
 function Home() {
