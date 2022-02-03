@@ -1,0 +1,46 @@
+{
+    "products": [
+        {
+            "name": "serving_spoons_gold",
+            "img": "/images/flatware/servingSpoonsGold.jpg",
+            "title": "Serving Spoons",
+            "price": 69.00
+        },
+        {
+            "name": "serving_spoons_black",
+            "img": "/images/flatware/servingSpoonsBlack.jpg",
+            "title": "Serving Spoons", 
+            "price": 69.00
+        },
+        {
+            "name": "serving_spoons_silver",
+            "img": "/images/flatware/servingSpoonsSilver.jpg",
+            "title": "Serving Spoons", 
+            "price": 69.00
+        },
+        {
+            "name": "flatware_set_gold",
+            "img": "/images/flatware/flatwareSetGold.jpg",
+            "title": "Flatware Set", 
+            "price": 288.00
+        },
+        {
+            "name": "flatware_set_silver",
+            "img": "/images/flatware/flatwareSetSilver.jpg",
+            "title": "Flatware Set", 
+            "price": 288.00
+        },
+        {
+            "name": "flatware_set_black",
+            "img": "/images/flatware/flatwareSetBlack.jpg",
+            "title": "Flatware Set", 
+            "price": 288.00
+        },
+        {
+            "name": "serving_spoons_mixed",
+            "img": "/images/flatware/servingSpoonsMixed.jpg",
+            "title": "Serving Spoons", 
+            "price": 69.00
+        }
+    ]
+}

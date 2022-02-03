@@ -1,0 +1,22 @@
+{
+    "products": [
+        {
+            "name": "serving_bowl",
+            "img": "/images/serveware/servingBowl.jpg",
+            "title": "The Serving Bowl",
+            "price": 49.00
+        },
+        {
+            "name": "carafe",
+            "img": "/images/serveware/carafe.jpg",
+            "title": "The Carafe", 
+            "price": 50.00
+        },
+        {
+            "name": "carafe_set",
+            "img": "/images/serveware/carafeSet.jpg",
+            "title": "Ceramic Carafe Set", 
+            "price": 108.00
+        }
+    ]
+}

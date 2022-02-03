@@ -29,6 +29,48 @@
             "img": "/images/dinnerware/servingSet.jpg",
             "title": "Serving Set",
             "price": 105.00
+        },
+        {
+            "name": "dinnerware_set",
+            "img": "/images/dinnerware/dinnerwareSet.jpg",
+            "title": "Dinnerware Set",
+            "price": 215.00
+        },
+        {
+            "name": "cereal_bowls",
+            "img": "/images/dinnerware/cerealBowls.jpg",
+            "title": "The Cereal Bowls",
+            "price": 49.00
+        },
+        {
+            "name": "dinner_plates",
+            "img": "/images/dinnerware/dinnerPlates.jpg",
+            "title": "The Dinner Plates",
+            "price": 69.00
+        },
+        {
+            "name": "pasta_bowls",
+            "img": "/images/dinnerware/pastaBowls.jpg",
+            "title": "The Pasta Bowls",
+            "price": 69.00
+        },
+        {
+            "name": "serving_bowl",
+            "img": "/images/dinnerware/servingBowl.jpg",
+            "title": "The Serving Bowl",
+            "price": 49.00
+        },
+        {
+            "name": "salad_plates",
+            "img": "/images/dinnerware/saladPlates.jpg",
+            "title": "The Salad Plates",
+            "price": 49.00
+        },
+        {
+            "name": "carafe_set",
+            "img": "/images/dinnerware/carafeSet.jpg",
+            "title": "Ceramic Carafe Set",
+            "price": 108.00
         }
     ]
 }

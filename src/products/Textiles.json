@@ -1,0 +1,16 @@
+{
+    "products": [
+        {
+            "name": "tablecloth",
+            "img": "/images/textiles/tableCloth.jpg",
+            "title": "The Tablecloth",
+            "price": 229.00
+        },
+        {
+            "name": "napkins",
+            "img": "/images/textiles/napkins.jpg",
+            "title": "The Napkins", 
+            "price": 95.00
+        }
+    ]
+}

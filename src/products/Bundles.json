@@ -1,0 +1,22 @@
+{
+    "products": [
+        {
+            "name": "dinnerware_set",
+            "img": "/images/bundles/dinnerwareSet.jpg",
+            "title": "Dinnerware Set",
+            "price": 215.00
+        },
+        {
+            "name": "dining_essentials",
+            "img": "/images/bundles/diningEssentials.jpg",
+            "title": "Dining Essentials", 
+            "price": 525.00
+        },
+        {
+            "name": "serving_set",
+            "img": "/images/bundles/servingSet.jpg",
+            "title": "Serving Set", 
+            "price": 105.00
+        }
+    ]
+}
